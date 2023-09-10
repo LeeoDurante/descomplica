@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dever Aula 12</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+       <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+<div class="container fluid">
+    <form class="form-horizontal">
+        <fieldset>
+        
+        <h1>Qual tipo de veículo você busca?</h1>
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="radios">Tipo</label>
+          <div class="col-md-4">
+          <div class="radio">
+            <label for="radios-0">
+              <input type="radio" name="radios" id="radios-0" value="c" checked="checked">
+              Carro
+            </label>
+            </div>
+          <div class="radio">
+            <label for="radios-1">
+              <input type="radio" name="radios" id="radios-1" value="m">
+              Moto
+            </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="inputFab">Fabricante</label>  
+          <div class="col-md-4">
+          <input id="inputFab" name="inputFab" type="text" placeholder="VW, GM, FIAT, JEEP" class="form-control input-md"maxlength="20" required>
+            
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="inputMod">Modelo</label>  
+          <div class="col-md-4">
+          <input id="inputMod" name="inputMod" type="text" placeholder="jetta, cruze, toro, compass" class="form-control input-md" required maxlength="10">
+            
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="inputAno">Ano/Modelo</label>  
+          <div class="col-md-4">
+          <input id="inputAno" name="inputAno" type="text" placeholder="ex: 16\17" class="form-control input-md" maxlength="10">
+            
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="selectCor">Cor</label>
+          <div class="col-md-4">
+            <select id="selectCor" name="selectCor" class="form-control">
+              <option value="b">Branco</option>
+              <option value="p">Prata</option>
+              <option value="c">Cinza</option>
+              <option value="pr">Preto</option>
+              <option value="a">Amarelo</option>
+              <option value="v">Vermelho</option>
+              <option value="az">Azul</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="inputPlaca">Placa</label>  
+          <div class="col-md-4">
+          <input id="inputPlaca" name="inputPlaca" type="text" placeholder="ex: AAA0000, AAA0A00" class="form-control input-md" required, maxlength="7">
+            
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="checkOp">Opcionais</label>
+          <div class="col-md-4">
+            <label class="checkbox-inline" for="checkOp-0">
+              <input type="checkbox" name="checkOp" id="checkOp-0" value="d">
+              Direção
+            </label>
+            <label class="checkbox-inline" for="checkOp-1">
+              <input type="checkbox" name="checkOp" id="checkOp-1" value="ar">
+              Ar
+            </label>
+            <label class="checkbox-inline" for="checkOp-2">
+              <input type="checkbox" name="checkOp" id="checkOp-2" value="t">
+              Teto-Solar
+            </label>
+            <label class="checkbox-inline" for="checkOp-3">
+              <input type="checkbox" name="checkOp" id="checkOp-3" value="c">
+              Couro
+            </label>
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="radios">Câmbio</label>
+          <div class="col-md-4"> 
+            <label class="radio-inline" for="radios-0">
+              <input type="radio" name="radios" id="radios-0" value="at" checked="checked">
+              Automático
+            </label> 
+            <label class="radio-inline" for="radios-1">
+              <input type="radio" name="radios" id="radios-1" value="mn">
+              Manual
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label font-weight-bold" for="selectZero">Estado</label>
+          <div class="col-md-4">
+            <select id="selectZero" name="selectZero" class="form-control">
+              <option value="z">Zero KM</option>
+              <option value="s">Seminovo</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group2">
+          <label class="col-md-8 control-label" for="buttonEnviar"></label>
+          <div class="col-md-8">
+            <button id="buttonEnviar" name="buttonEnviar" class="btn btn-success">Enviar</button>
+            <button id="buttonLimpar" name="buttonLimpar" class="btn btn-danger">Limpar</button>
+          </div>
+        </div>        
+        </fieldset>
+        </form>
+</div>        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
